@@ -70,7 +70,9 @@ internal class TestStartup
                 new KeyValuePair<string, string>("AzureWebJobsServiceBus", "UseDevelopmentStorage=true"),
                 new KeyValuePair<string, string>("ApplicationSettings:NServiceBusConnectionString", "UseLearningEndpoint=true"),
                 new KeyValuePair<string, string>("ApplicationSettings:PaymentsConfiguration:PaymentsEndpoint", "payments-queue-name"),
-                new KeyValuePair<string, string>("ApplicationSettings:DbConnectionString", testContext.SqlDatabase?.DatabaseInfo.ConnectionString!)
+                new KeyValuePair<string, string>("ApplicationSettings:DbConnectionString", testContext.SqlDatabase?.DatabaseInfo.ConnectionString!),
+                new KeyValuePair<string, string>("ApplicationSettings:ApprenticeshipOptInConfiguration:StartDate", "2020-01-01"),
+                new KeyValuePair<string, string>("ApplicationSettings:ApprenticeshipOptInConfiguration:Providers:0", "12345678")
             }
         };
 
