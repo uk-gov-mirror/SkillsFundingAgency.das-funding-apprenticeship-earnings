@@ -24,7 +24,7 @@ public class ApplicationSettings
 public class ApprenticeshipOptInConfiguration
 {
     public DateTime StartDate { get; set; }
-    public List<long> Providers { get; set; }
+    public List<long> Providers { get; set; } = [];
 }
 
 [ExcludeFromCodeCoverage]
