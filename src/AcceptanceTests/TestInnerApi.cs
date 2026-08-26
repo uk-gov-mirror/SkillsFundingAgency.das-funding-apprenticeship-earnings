@@ -49,8 +49,8 @@ public class TestInnerApi : IDisposable
                 services.AddSingleton<IFundingBandMaximumService>(_testContext.FundingBandMaximumService);
                 services.AddSingleton(new ApprenticeshipOptInConfiguration
                 {
-                    StartDate = new DateTime(2020, 1, 1),
-                    Providers = [12345678]
+                    StartDate = new DateTime(2018, 1, 1),
+                    Providers = [12345678, 116]
                 });
 
                 AddEntityFrameworkForApprenticeships(services, testContext.SqlDatabase?.DatabaseInfo.ConnectionString!);
