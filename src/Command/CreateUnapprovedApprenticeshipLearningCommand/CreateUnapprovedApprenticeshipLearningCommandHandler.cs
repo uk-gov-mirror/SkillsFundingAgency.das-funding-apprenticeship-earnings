@@ -63,7 +63,7 @@ public class CreateUnapprovedApprenticeshipLearningCommandHandler
             await _learningRepository.Update(learning);
         }
         //new learning & episode
-        else
+        else if (request.IsNewApprenticeshipLearner)
         {
             var newLearning = _learningFactory.CreateNewUnapprovedApprenticeship(request, fundingBandMaximum);
 
